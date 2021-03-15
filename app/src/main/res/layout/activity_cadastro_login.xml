@@ -1,9 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastroLogin">
+    tools:context=".CadastroLogin"
+    android:orientation="vertical"
+    android:background="@drawable/cadastro_new">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginStart="20dp"
+        android:text="Informe seu email e senha para iniciar a assinatura"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Por apenas R$ 5,00 p/ mês"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crie sua conta"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edity_text_cadastro"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="20dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Senha"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        android:background="@drawable/edity_text_cadastro"
+        android:padding="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Cadastrar"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:padding="15dp"
+        />
+
+
+
+
+
+
+</LinearLayout>
