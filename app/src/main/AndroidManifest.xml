@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NetFlixClone">
-        <activity android:name=".ListaFilmes"></activity>
+        <activity android:name=".DetalhesFilmes"></activity>
+        <activity android:name=".ListaFilmes" />
         <activity android:name=".CadastroLogin" />
         <activity android:name=".FormLogin" />
         <activity android:name=".MainActivity">
